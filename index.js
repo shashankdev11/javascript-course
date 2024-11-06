@@ -7,5 +7,8 @@ function sayHi(){
 function featureOne (){
     console.log("Feature One")
 }
+function featureTwo (){
+    console.log("Feature One")
+}
 sayHello();
 sayHi();
