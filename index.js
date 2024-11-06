@@ -4,5 +4,9 @@ function sayHello(){
 function sayHi(){
     console.log("Hi")
 }
+
+function featureTwo (){
+    console.log("Feature One")
+}
 sayHello();
 sayHi();
