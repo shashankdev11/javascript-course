@@ -8,5 +8,8 @@ function sayHi(){
 function featureTwo (){
     console.log("Feature One")
 }
+function local (){
+    console.log("Feature One")
+}
 sayHello();
 sayHi();
