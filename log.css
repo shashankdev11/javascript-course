@@ -1,0 +1,33 @@
+.login {
+  border: 5px solid black;
+  margin: 50px auto;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  background-image: url(img3.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+body {
+  background: url("./img2.jpg") no-repeat center center/cover;
+  backdrop-filter: blur(4);
+}
+form {
+  border-radius: 20px;
+  padding: 20px;
+}
+label {
+  text-transform: uppercase;
+  color: white;
+}
+input {
+  border-radius: 20px;
+  box-shadow: inset;
+}
+button {
+  width: 200px right;
+  border-radius: 30px;
+}

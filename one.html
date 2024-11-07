@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eventlistner</title>
+  </head>
+  <body>
+    <h1>event learner</h1>
+    <ul id="images">
+      <li>
+        <img width="200px" src="img1.jpg" alt="" id="img1" />
+      </li>
+      <li>
+        <img width="200px" src="img2.jpg" alt="" id="img2" />
+      </li>
+      <li>
+        <img width="200px" src="img3.jpg" alt="" id="img3" />
+      </li>
+      <li>
+        <a href="http://www.google.com" id="gooleSite"
+          ><button>go to google</button></a
+        >
+      </li>
+    </ul>
+  </body>
+  <script>
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("clicked on imgage 1");
+    //   },
+    //   false
+    // );
+    // document.getElementById("img2").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("clicked on imgage 2");
+    //     // e.stopPropagation();
+    //   },
+    //   false
+    // );
+    document
+      .getElementById("gooleSite")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log("clicked on google site");
+      });
+
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.tagName);
+      if (e.target.tagName === "IMG") {
+        console.log(e.target);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>shashank shukla</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <!-- <button id="changeme">changeme</button>
+    <div>
+      <button id="babu">Ayushi</button>
+      <button id="ok">ok ruko</button>
+    </div> -->
+  </body>
+  <script>
+    let goon;
+    document.querySelector("#start").addEventListener("click", function () {
+      goon = setTimeout(function () {
+        console.log("i am clicked");
+      }, 5000);
+    });
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(goon);
+      console.log("stopped");
+    });
+    // document.querySelector("#changeme").addEventListener("click", function () {
+    //   changetext = setTimeout(function () {
+    //     document.querySelector("h1").innerHTML = "changed text";
+    //   }, 3000);
+    // });
+    // document.querySelector("#babu").addEventListener("click", function () {
+    //   console.log("ayushi shukla 1");
+    //   love = setTimeout(function () {
+    //     console.log("ayushi shukla 2");
+    //   }, 0);
+    //   console.log("ayushi shukla 3");
+    // });
+    // document.querySelector("#ok").addEventListener("click", function () {
+    //   clearInterval(love);
+    //   console.log("ok ruko");
+    // });
+  </script>
+</html>
